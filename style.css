@@ -172,7 +172,7 @@ nav ul li a::after {
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: inline-block;
 }
 
@@ -673,6 +673,7 @@ form .btn2 {
         margin-top: 10px;   /* optional: keep it balanced */
     }
 }
+
 
 
 
