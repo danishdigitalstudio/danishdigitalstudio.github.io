@@ -631,7 +631,7 @@ form .btn2 {
 
 .sub-title {
         margin-top: -40px; /* slightly smaller top margin for small screens */
-        font-size: 40px;   /* adjust if needed */
+        font-size: 30px;   /* adjust if needed */
     }
 
     .nav-links {
@@ -674,6 +674,7 @@ form .btn2 {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
