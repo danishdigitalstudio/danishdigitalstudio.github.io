@@ -540,28 +540,38 @@ form .btn2 {
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
 /* ---------------------- */
-/* MOBILE VERSION */
+/* TABLET & MOBILE (up to 768px) */
 /* ---------------------- */
 @media (max-width: 768px) {
+
+    /* Sections padding */
     #services,
     #portfolio,
     #contact {
         padding: 25px 0;
     }
 
+    /* Contact Section */
     #contact .row {
-        padding: 10px 0 !important;   /* Desktop ke 30px ko override karega */
-        gap: 20px !important;         /* Desktop ke 40px ko override karega */
+        padding: 10px 0 !important;
+        gap: 20px !important;
+        flex-direction: column;
+    }
+
+    .contact-col-1,
+    .contact-col-2 {
+        flex-basis: 100%;
+    }
+
+    .contact-col-2 {
+        padding-top: 20px;
     }
 
     #contact .sub-title {
         margin-top: -50px;
     }
-}
 
-
-@media (max-width: 768px) {
-
+    /* Navbar */
     .hamburger {
         display: flex;
         margin-top: 10px;
@@ -575,11 +585,9 @@ form .btn2 {
     .nav-links {
         position: absolute;
         top: 80px;
-        /* menu below header */
         left: 15px;
         right: 15px;
         width: auto;
-        /* fit screen width minus padding */
         background: #111;
         padding: 20px;
         flex-direction: column;
@@ -593,71 +601,15 @@ form .btn2 {
         display: flex;
     }
 
-    /* About section columns stack */
+    /* About section */
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
         padding-left: 0;
         margin-top: 20px;
     }
-}
 
-
-/* About Section */
-@media (max-width: 768px) {
-
-    .about-col-1,
-    .about-col-2 {
-        flex-basis: 100%;
-        padding-left: 0;
-        margin-top: 20px;
-    }
-}
-
-/* Services Grid */
-@media (max-width: 992px) {
-    .services-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .services-list {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Portfolio Grid */
-@media (max-width: 992px) {
-    .portfolio-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .portfolio-list {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Contact Section */
-@media (max-width: 768px) {
-    #contact .row {
-        flex-direction: column;
-    }
-
-    .contact-col-1,
-    .contact-col-2 {
-        flex-basis: 100%;
-    }
-
-    .contact-col-2 {
-        padding-top: 20px;
-    }
-}
-
-/* Mobile Fix */
-@media (max-width: 768px) {
+    /* Skills section */
     .skills-row {
         flex-direction: column;
     }
@@ -665,14 +617,65 @@ form .btn2 {
     .skills-col {
         width: 100%;
     }
-}
-@media (max-width: 768px) {
+
+    /* Copyright */
     .copyright {
-        padding: 6px 0;     /* mobile height even smaller */
-        line-height: 1.2;   /* tighter spacing */
-        margin-top: 10px;   /* optional: keep it balanced */
+        padding: 6px 0;
+        line-height: 1.2;
+        margin-top: 10px;
     }
 }
+
+/* ---------------------- SMALL MOBILE (375px x 667px) ---------------------- */
+@media (max-width: 375px) {
+
+    #contact .sub-title {
+        margin-top: -40px; /* slightly smaller top margin for small screens */
+        font-size: 50px;   /* adjust if needed */
+    }
+
+    .nav-links {
+        top: 70px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        padding: 4px 0;
+        line-height: 1.1;
+        font-size: 12px;
+    }
+
+    .about-col-1,
+    .about-col-2,
+    .contact-col-1,
+    .contact-col-2,
+    .skills-col {
+        margin-top: 15px;
+    }
+}
+
+/* ---------------------- SERVICES GRID ---------------------- */
+@media (max-width: 992px) {
+    .services-list,
+    .portfolio-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-list,
+    .portfolio-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 
 
