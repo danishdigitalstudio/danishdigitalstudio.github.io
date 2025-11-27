@@ -629,7 +629,7 @@ form .btn2 {
 /* ---------------------- SMALL MOBILE (375px x 667px) ---------------------- */
 @media (max-width: 320px) {
 
-    #contact .sub-title {
+.sub-title {
         margin-top: -40px; /* slightly smaller top margin for small screens */
         font-size: 40px;   /* adjust if needed */
     }
@@ -674,6 +674,7 @@ form .btn2 {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
